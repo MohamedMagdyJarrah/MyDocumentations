@@ -1,0 +1,7 @@
+add_test([=[AddTest.HandlesPositiveNumbers]=]  [==[C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/BasicTestCase.exe]==] [==[--gtest_filter=AddTest.HandlesPositiveNumbers]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AddTest.HandlesPositiveNumbers]=]  PROPERTIES WORKING_DIRECTORY [==[C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[AddTest.HandlesNegativeNumbers]=]  [==[C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/BasicTestCase.exe]==] [==[--gtest_filter=AddTest.HandlesNegativeNumbers]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AddTest.HandlesNegativeNumbers]=]  PROPERTIES WORKING_DIRECTORY [==[C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[AddTest.HandlesMixedNumbers]=]  [==[C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/BasicTestCase.exe]==] [==[--gtest_filter=AddTest.HandlesMixedNumbers]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AddTest.HandlesMixedNumbers]=]  PROPERTIES WORKING_DIRECTORY [==[C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  BasicTestCase_TESTS AddTest.HandlesPositiveNumbers AddTest.HandlesNegativeNumbers AddTest.HandlesMixedNumbers)

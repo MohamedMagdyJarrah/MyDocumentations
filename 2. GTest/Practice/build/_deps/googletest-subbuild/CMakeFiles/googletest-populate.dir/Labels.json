@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/8f516626aa0b6c1f625ef00be6b8970a/googletest-populate.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/c7f3b6089c3695ead661d939eb145269/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/9db8342bc732eada9d94b77c5010842b/googletest-populate-build.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/9db8342bc732eada9d94b77c5010842b/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/9db8342bc732eada9d94b77c5010842b/googletest-populate-download.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/9db8342bc732eada9d94b77c5010842b/googletest-populate-install.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/9db8342bc732eada9d94b77c5010842b/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/9db8342bc732eada9d94b77c5010842b/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/9db8342bc732eada9d94b77c5010842b/googletest-populate-test.rule"
+		},
+		{
+			"file" : "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/9db8342bc732eada9d94b77c5010842b/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

@@ -1,0 +1,3 @@
+C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/_deps/googletest-subbuild/CMakeFiles/ZERO_CHECK.dir
