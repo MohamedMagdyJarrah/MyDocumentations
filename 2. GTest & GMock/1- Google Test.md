@@ -463,3 +463,38 @@ We also changed the input of the test fixture to be tuple of pairs.
 
 # Typed Tests
 Suppose you have multiple implementations of the same interface and want to make sure that all of them satisfy some common requirements. Or, you may have defined several types that are supposed to conform to the same “concept” and you want to verify it. In both cases, you want the same test logic repeated for different types.
+
+It is like the parameterized test but here the parameter is the class you want test or the implementation of the interface class you are testing.
+
+Let's say we have an interface class called `MyLib` and have a pure virtual function `FindMax` that get element of a vector.<br>
+![alt text](Images/image34.png)<br>
+and we have 2 classes which are `MyLibIterative` and `MyLibRecursive` that have different implementation of this function.<br>
+![alt text](Images/image35.png)<br>
+The big picture here is that we have one interface `MyLib` and two implementations that implement the same function `FindMax` and we try to test it with the same inputs and outputs in one test rather than writing a collection of test for each class like the following:<br>
+![alt text](Images/image36.png)<br>
+## To do this:
+- Create a test fixture that inherit `Test` class from google test as a template class that takes a type and instantiate an object with this type
+  ```
+  We made this template class to let google test pass the type to our test fixture with the classes with different implementation
+  ```
+- We define a new type with `typedef` here we called it `implementations` and give the name of the two classes `MyLibIterative` and `MyLibRecursive` to the template class that defined in google test which is named `Types` 
+- Once you define the types, You can now define your test suit using this macro `TYPED_TEST_SUITE()` that takes two parameters, first one is the name of the test suite and the second one in the types we defined in the previous step.
+- The final step is just to write your test using `TYPED_TEST()` macro instead `TEST_F()` for test fixture and pass the name of the name of the test fixture and the name of the test case.
+### What will happen behind the scene?
+```
+The google test will run these tests once for every type we added
+```
+and you can see the result as shown:<br>
+![alt text](Images/image37.png)<br>
+
+
+# Type-Parameterized Tests
+It are very similar to `Typed Tests` but with a minor difference.
+As we saw in `Typed Tests` we need to define the types with the classes as a parameters before writing your tests as:<br>
+![alt text](Images/image38.png)<br>
+
+This is not ideal as sometimes you need to implement the interface without even knowing what the implementation are and then write a setup test for it.
+
+**Type-parameterized** don’t require you to know the list of types ahead of time. Instead, you can define the test logic first and instantiate it with different type lists later. You can even instantiate it more than once in the same program.
+
+## For example:
