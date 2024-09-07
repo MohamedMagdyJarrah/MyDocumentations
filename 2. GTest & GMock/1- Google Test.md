@@ -478,7 +478,7 @@ The big picture here is that we have one interface `MyLib` and two implementatio
   We made this template class to let google test pass the type to our test fixture with the classes with different implementation
   ```
 - We define a new type with `typedef` here we called it `implementations` and give the name of the two classes `MyLibIterative` and `MyLibRecursive` to the template class that defined in google test which is named `Types` 
-- Once you define the types, You can now define your test suit using this macro `TYPED_TEST_SUITE()` that takes two parameters, first one is the name of the test suite and the second one in the types we defined in the previous step.
+- Once you define the types, You can now define your test suit using this macro `TYPED_TEST_SUITE()` that takes two parameters, first one is the name of the test suite and the second one is the types we defined in the previous step.
 - The final step is just to write your test using `TYPED_TEST()` macro instead `TEST_F()` for test fixture and pass the name of the name of the test fixture and the name of the test case.
 ### What will happen behind the scene?
 ```
@@ -498,3 +498,54 @@ This is not ideal as sometimes you need to implement the interface without even 
 **Type-parameterized** don’t require you to know the list of types ahead of time. Instead, you can define the test logic first and instantiate it with different type lists later. You can even instantiate it more than once in the same program.
 
 ## For example:
+![alt text](Images/image39.png)<br>
+- Here we only define the test suite without including the classes that contain the implementations you want to test using `TYPED_TEST_SUITE_P(TestFixtureName)`.
+- Then write your test cases according to the logic you expect to be implemented in these classes with `TYPED_TEST_P(TestSuiteName, TestName)`.
+- You should after finishing the test cases register them to the test suit you defined using `REGISTER_TYPED_TEST_SUITE_P(TestSuiteName,TestNames...)`.
+> This code can be compiled without any errors.
+### After this:
+![alt text](Images/image40.png)<br>
+**Later on**, You can define the types you want to test and instantiate the test suite registered by `REGISTER_TYPED_TEST_SUITE_P` with `INSTANTIATE_TYPED_TEST_SUITE_P(InstantiationName,TestSuiteName,Types)` and this is the difference from `Typed Tests`.
+
+# Asserting in Subroutines
+Sometimes you have a various tests in your test case and if one of them is failed, You will get a generic error message the doesn't explain which part causes the issue.<br>
+With `SCOPED_TRACE(message)` will cause the current file name, line number, and the given message to be added in every failure message to recieve better report.
+## For Example:
+```c++
+void MyFunction(int n){
+    // Checks if n is 2.
+    EXPECT_EQ(n, 2);
+}
+
+TEST(SubTest, WithoutScopeTraceSimple){
+    MyFunction(1);
+    MyFunction(1);
+    MyFunction(1);
+}
+```
+If one of these subroutines fails, You will not get which one of these the failure occured as shown here:<br>
+![alt text](Images/image41.png)<br>
+and you will get that the error is in line `EXPECT_EQ(n, 2);` only without knowing which function failed.
+
+### If we used `SCOPED_TRACE(message)`:
+```c++
+void MyFunction(int n){
+    // Checks if n is 2.
+    EXPECT_EQ(n, 2);
+}
+
+TEST(SubTest, WithoutScopeTraceSimple){
+    {
+        SCOPED_TRACE("MyScope1");
+        MyFunction(1);
+        {
+            SCOPED_TRACE("MyScope2");
+            MyFunction(1);
+        }
+    }
+    MyFunction(1);
+}
+```
+Here we classify each call with different scope and used `SCOPED_TRACE(message)` to detect in which scope the failure occurs and get detailed report as shown here:<br>
+![alt text](Images/image42.png)<br>
+and by this we simplify debugging of your tests.
