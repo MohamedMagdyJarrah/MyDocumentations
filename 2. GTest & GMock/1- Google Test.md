@@ -12,6 +12,8 @@
 - [Sharing Test Logic for Various Inputs](#sharing-test-logic-for-various-inputs)
 - [Sharing Test Logic and inputs for Various Implementations](#sharing-test-logic-and-inputs-for-various-implementations)
 - [Typed Tests](#typed-tests)
+- [Typed-Parameterized Tests](#type-parameterized-tests)
+- [Asserting in Subroutines](#asserting-in-subroutines)
 
 # What is Unit testing?
     - A unit test is a piece of code that tests a function or class.
