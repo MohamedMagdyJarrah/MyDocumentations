@@ -9,6 +9,9 @@
   - [TypedEq Matcher](#typedeq-matcher)
   - [Wildcard](#wildcard)
 - [String Matchers](#string-matchers)
+  - [Regex in Matchers](#regex-in-matchers)
+- [Floating-Point Matchers](#floating-point-matchers)
+- [Composite Matchers](#composite-matchers)
 
 # Matchers
 A **matcher** matches a single argument.
@@ -96,7 +99,33 @@ using ::testing::StartWith;
 The argument can be either a C string or a C++ string object:
 | **Macro** | **Description**  |
 | --------- | ---------------- |
-| `StrCaseEq(string)`	| argument is equal to string, ignoring case. |
-| `StrCaseNe(string)` |	argument is not equal to string, ignoring case. |
 | `StrEq(string)` |	argument is equal to string. |
 | `StrNe(string)` |	argument is not equal to string. |
+| `StrCaseEq(string)`	| argument is equal to string, ignoring case. |
+| `StrCaseNe(string)` |	argument is not equal to string, ignoring case. |
+| `IsEmpty()` |	argument is an empty string.|
+
+## Regex in Matchers
+![alt text](Images/image53.png)<br>
+| **Macro** | **Description**  |
+| --------- | ---------------- |
+| `ContainsRegex(string)` |	argument matches the given regular expression. |
+| `EndsWith(suffix)` | argument ends with string suffix. |
+| `HasSubstr(string)`| argument contains string as a sub-string. |
+| `MatchesRegex(string)` | argument matches the given regular expression with the match starting at the first character and ending at the last character.|
+| `StartsWith(prefix)` | argument starts with string prefix.|
+
+# Floating-Point Matchers
+These matchers use ULP-based comparison (the same as used in googletest). They automatically pick a reasonable error bound based on the absolute value of the expected value. 
+![alt text](Images/image54.png)
+![alt text](Images/image55.png) ![alt text](Images/image56.png)<br>
+| **Macro** | **Description**  |
+| --------- | ---------------- |
+| `DoubleEq(a_double)`|	argument is a double value approximately equal to `a_double`, treating two `NaNs` as unequal.|
+| `FloatEq(a_float)`| argument is a float value approximately equal to `a_float`, treating two `NaNs` as unequal.|
+| `NanSensitiveDoubleEq(a_double)`| argument is a double value approximately equal to `a_double`, treating two `NaNs` as equal.|
+| `NanSensitiveFloatEq(a_float)`|	argument is a float value approximately equal to `a_float`, treating two `NaNs` as equal.|
+| `IsNan()`| argument is any floating-point type with a NaN value.| 
+
+
+# Composite Matchers
