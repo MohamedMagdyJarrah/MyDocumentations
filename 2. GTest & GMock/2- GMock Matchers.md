@@ -12,6 +12,8 @@
   - [Regex in Matchers](#regex-in-matchers)
 - [Floating-Point Matchers](#floating-point-matchers)
 - [Composite Matchers](#composite-matchers)
+    - [Examples:](#examples)
+- [Container Matchers](#container-matchers)
 
 # Matchers
 A **matcher** matches a single argument.
@@ -129,3 +131,17 @@ These matchers use ULP-based comparison (the same as used in googletest). They a
 
 
 # Composite Matchers
+You can make a matcher from one or more other matchers:
+| **Macro** | **Description**  |
+| --------- | ---------------- |
+| `AllOf(m1, m2, ..., mn)`|argument matches all of the matchers m1 to mn.|
+| `AllOfArray({m0, m1, ..., mn})`, `AllOfArray(a_container)`, `AllOfArray(begin, end)`, `AllOfArray(array)`, or `AllOfArray(array, count)`|The same as `AllOf()` except that the matchers come from an initializer list, STL-style container, iterator range, or C-style array.|
+| `AnyOf(m1, m2, ..., mn)` |argument matches at least one of the matchers m1 to mn.|
+| `AnyOfArray({m0, m1, ..., mn})`, `AnyOfArray(a_container)`, `AnyOfArray(begin, end)`, `AnyOfArray(array)`, or `AnyOfArray(array, count)`|The same as `AnyOf()` except that the matchers come from an initializer list, STL-style container, iterator range, or C-style array.|
+| `Not(m)`| argument doesn’t match matcher m.|
+| `Conditional(cond, m1, m2)`|	Matches matcher `m1` if `cond` evaluates to true, else matches `m2`.|
+### Examples:
+![alt text](Images/image57.png) ![alt text](Images/image58.png)
+You can create a vector of `Matchers` and send it to `AllOfArray` as shown in the previous picture.
+
+# Container Matchers
