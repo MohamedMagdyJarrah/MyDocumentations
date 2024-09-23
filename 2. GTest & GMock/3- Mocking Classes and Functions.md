@@ -223,3 +223,67 @@ A mock is a smarter stub. You verify your test passes through it. so you could m
 
 `Example:`
 ```c++
+#include <string>
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+
+class Database {
+public:
+    virtual ~Database() {}
+    virtual std::string getUser(int id) = 0;
+};
+
+class RealDatabase : public Database {
+public:
+    std::string getUser(int id) override {
+        // Imagine this fetches from a real database.
+        return "User_" + std::to_string(id);
+    }
+};
+
+class UserService {
+public:
+    UserService(Database* db) : database(db) {}
+
+    std::string fetchUser(int id) {
+        return database->getUser(id);
+    }
+
+private:
+    Database* database;
+};
+
+class MockDatabase : public Database {
+public:
+    MOCK_METHOD(std::string, getUser, (int id), (override));
+};
+
+TEST(UserServiceTest, FetchUserReturnsCorrectUser) {
+    MockDatabase mockDatabase;
+
+    // Set up the expectation
+    EXPECT_CALL(mockDatabase, getUser(1))
+        .Times(1) // Expect this to be called once
+        .WillOnce(::testing::Return("MockedUser_1"));
+
+    UserService userService(&mockDatabase);
+    std::string user = userService.fetchUser(1);
+
+    EXPECT_EQ(user, "MockedUser_1");
+}
+
+TEST(UserServiceTest, FetchUserReturnsDifferentUser) {
+    MockDatabase mockDatabase;
+
+    // Set up a different expectation
+    EXPECT_CALL(mockDatabase, getUser(2))
+        .Times(1)
+        .WillOnce(::testing::Return("MockedUser_2"));
+
+    UserService userService(&mockDatabase);
+    std::string user = userService.fetchUser(2);
+
+    EXPECT_EQ(user, "MockedUser_2");
+}
+```
+
