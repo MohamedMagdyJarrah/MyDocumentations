@@ -10,8 +10,8 @@
 
 # What is Mocking and Why we use it? 
 - Mocking is a process used in unit testing when the unit being tested has external dependencies.<br> ![alt text](Images/image88.png)
-- The purpose of mocking is to isolate and focus on the code being tested and not on the behavior or state of external dependencies.
-- In mocking, the dependencies are replaced by closely controlled replacements objects that simulate the behavior of the real ones. ![alt text](Images/image89.png)<br>
+- The purpose of mocking is to isolate and focus on the code being tested and not on the behavior or state of external dependencies.<br>
+- In mocking, the dependencies are replaced by closely controlled replacements objects that simulate the behavior of the real ones. <br>![alt text](Images/image89.png)<br>
 
 # Test Doubles
 A test double is an object that can stand in for a real object in a test, similar to how a stunt double stands in for an actor in a movie
@@ -286,4 +286,3 @@ TEST(UserServiceTest, FetchUserReturnsDifferentUser) {
     EXPECT_EQ(user, "MockedUser_2");
 }
 ```
-
