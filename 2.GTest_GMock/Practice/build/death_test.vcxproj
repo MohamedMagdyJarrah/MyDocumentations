@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DA75ADBF-331E-3BCE-95AB-EB320E1068DA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>death_test</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">death_test.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">death_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">death_test.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">death_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">death_test.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">death_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">death_test.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">death_test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=death_test -D "TEST_EXECUTABLE=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/death_test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=death_test_TESTS -D "CTEST_FILE=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/death_test[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-3.30/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\gtest_main.lib;lib\Debug\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/death_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/death_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=death_test -D "TEST_EXECUTABLE=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Release/death_test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=death_test_TESTS -D "CTEST_FILE=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/death_test[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-3.30/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\gtest_main.lib;lib\Release\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Release/death_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Release/death_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=death_test -D "TEST_EXECUTABLE=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/MinSizeRel/death_test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=death_test_TESTS -D "CTEST_FILE=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/death_test[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-3.30/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\gtest_main.lib;lib\MinSizeRel\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/MinSizeRel/death_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/MinSizeRel/death_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\include;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=death_test -D "TEST_EXECUTABLE=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/RelWithDebInfo/death_test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=death_test_TESTS -D "CTEST_FILE=C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/death_test[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-3.30/Modules/GoogleTestAddTests.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\gtest_main.lib;lib\RelWithDebInfo\gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/RelWithDebInfo/death_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/RelWithDebInfo/death_test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice" "-BC:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build" --check-stamp-file "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeCXXCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice" "-BC:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build" --check-stamp-file "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeCXXCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice" "-BC:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build" --check-stamp-file "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeCXXCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice" "-BC:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build" --check-stamp-file "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeCXXCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\3.30.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\death_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\ZERO_CHECK.vcxproj">
+      <Project>{9CBDC5B6-8E7B-3CDE-983D-0C698CB43225}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-build\googletest\gtest.vcxproj">
+      <Project>{17E55C96-CAB5-340F-B7C2-4136ECB0DC1C}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-build\googletest\gtest_main.vcxproj">
+      <Project>{0A0D2866-5046-3B33-BBE3-79B38CC9F412}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

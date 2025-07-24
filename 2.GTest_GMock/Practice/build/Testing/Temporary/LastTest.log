@@ -1,0 +1,138 @@
+Start testing: Aug 31 19:40 Egypt Daylight Time
+----------------------------------------------------------
+1/5 Testing: AddTest.HandlesPositiveNumbers
+1/5 Test: AddTest.HandlesPositiveNumbers
+Command: "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/1_BasicTestCase.exe" "--gtest_filter=AddTest.HandlesPositiveNumbers" "--gtest_also_run_disabled_tests"
+Directory: C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build
+"AddTest.HandlesPositiveNumbers" start time: Aug 31 19:40 Egypt Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = AddTest.HandlesPositiveNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AddTest
+[ RUN      ] AddTest.HandlesPositiveNumbers
+[       OK ] AddTest.HandlesPositiveNumbers (0 ms)
+[----------] 1 test from AddTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"AddTest.HandlesPositiveNumbers" end time: Aug 31 19:40 Egypt Daylight Time
+"AddTest.HandlesPositiveNumbers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: AddTest.HandlesNegativeNumbers
+2/5 Test: AddTest.HandlesNegativeNumbers
+Command: "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/1_BasicTestCase.exe" "--gtest_filter=AddTest.HandlesNegativeNumbers" "--gtest_also_run_disabled_tests"
+Directory: C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build
+"AddTest.HandlesNegativeNumbers" start time: Aug 31 19:40 Egypt Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = AddTest.HandlesNegativeNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AddTest
+[ RUN      ] AddTest.HandlesNegativeNumbers
+[       OK ] AddTest.HandlesNegativeNumbers (0 ms)
+[----------] 1 test from AddTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"AddTest.HandlesNegativeNumbers" end time: Aug 31 19:40 Egypt Daylight Time
+"AddTest.HandlesNegativeNumbers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: AddTest.HandlesMixedNumbers
+3/5 Test: AddTest.HandlesMixedNumbers
+Command: "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/1_BasicTestCase.exe" "--gtest_filter=AddTest.HandlesMixedNumbers" "--gtest_also_run_disabled_tests"
+Directory: C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build
+"AddTest.HandlesMixedNumbers" start time: Aug 31 19:40 Egypt Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = AddTest.HandlesMixedNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AddTest
+[ RUN      ] AddTest.HandlesMixedNumbers
+[       OK ] AddTest.HandlesMixedNumbers (0 ms)
+[----------] 1 test from AddTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"AddTest.HandlesMixedNumbers" end time: Aug 31 19:40 Egypt Daylight Time
+"AddTest.HandlesMixedNumbers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: DivideTest.HandlesDivisionByZero
+4/5 Test: DivideTest.HandlesDivisionByZero
+Command: "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/2_TestingforExceptions.exe" "--gtest_filter=DivideTest.HandlesDivisionByZero" "--gtest_also_run_disabled_tests"
+Directory: C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build
+"DivideTest.HandlesDivisionByZero" start time: Aug 31 19:40 Egypt Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DivideTest.HandlesDivisionByZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DivideTest
+[ RUN      ] DivideTest.HandlesDivisionByZero
+[       OK ] DivideTest.HandlesDivisionByZero (0 ms)
+[----------] 1 test from DivideTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DivideTest.HandlesDivisionByZero" end time: Aug 31 19:40 Egypt Daylight Time
+"DivideTest.HandlesDivisionByZero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: DivideTest.HandlesValidDivision
+5/5 Test: DivideTest.HandlesValidDivision
+Command: "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/Debug/2_TestingforExceptions.exe" "--gtest_filter=DivideTest.HandlesValidDivision" "--gtest_also_run_disabled_tests"
+Directory: C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build
+"DivideTest.HandlesValidDivision" start time: Aug 31 19:40 Egypt Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from C:\My Data\Personal Documentation Repo\MyDocumentations\2. GTest\Practice\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = DivideTest.HandlesValidDivision
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DivideTest
+[ RUN      ] DivideTest.HandlesValidDivision
+[       OK ] DivideTest.HandlesValidDivision (0 ms)
+[----------] 1 test from DivideTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DivideTest.HandlesValidDivision" end time: Aug 31 19:40 Egypt Daylight Time
+"DivideTest.HandlesValidDivision" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 31 19:40 Egypt Daylight Time

@@ -1,0 +1,5 @@
+if(EXISTS "C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/2_TestingforExceptions[1]_tests.cmake")
+  include("C:/My Data/Personal Documentation Repo/MyDocumentations/2. GTest/Practice/build/2_TestingforExceptions[1]_tests.cmake")
+else()
+  add_test(2_TestingforExceptions_NOT_BUILT 2_TestingforExceptions_NOT_BUILT)
+endif()

@@ -1,0 +1,8 @@
+HelloTest.BasicAssertions 11 0.0019713
+HelloTest.secondTest 2 0
+AddTest.HandlesPositiveNumbers 4 0.00729467
+AddTest.HandlesNegativeNumbers 4 0.00478565
+AddTest.HandlesMixedNumbers 4 0.00441593
+DivideTest.HandlesDivisionByZero 1 0.0189024
+DivideTest.HandlesValidDivision 1 0.0183961
+---
